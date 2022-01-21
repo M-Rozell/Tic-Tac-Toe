@@ -1,0 +1,63 @@
+#board {
+    padding: 3em;
+}
+
+h1 {
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 1em;
+    
+    
+}
+
+.top, .center, .bottom {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+
+.row {
+    clear: both;
+    width: 302px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.top {
+    border-bottom: 1px black solid;
+}
+
+.bottom {
+    border-top: 1px black solid;
+}
+
+.left {
+    border-right: 1px black solid;
+}
+
+.right {
+    border-left: 1px black solid;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
