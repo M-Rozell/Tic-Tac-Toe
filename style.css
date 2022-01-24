@@ -6,7 +6,6 @@
 h1 {
     color: brown;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
     padding: 1em;
     
     
@@ -16,6 +15,7 @@ h1 {
     float: left;
     height: 100px;
     width: 100px;
+    cursor: pointer;
 }
 
 .row {
