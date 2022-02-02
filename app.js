@@ -59,10 +59,10 @@ function checkWin() {
                 oCount++
             }
             if (xCount == 3) {
-                msg.innerHTML = "X is the Winner";
+                msg.innerHTML = "X is the Winner!";
                 setTimeout(() => location.reload(), 1000);
             } else if (oCount == 3) {
-                msg.innerHTML = " O is the Winner";
+                msg.innerHTML = " O is the Winner!";
                 setTimeout(() => location.reload(), 1000);
             }
         }

@@ -5,17 +5,20 @@ body {
 #board {
     padding: 3em;
     text-align: center;
-    
 }
-
-
-
 h1 {
     color: rgb(192, 10, 10);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 1em;
+    
 }
 
+.msg{
+    font-size: 14px;
+    color: rgb(192, 10, 10);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding:1em;
+    margin-bottom: 1em;
+}
 
 .row>div {
     float: left;
@@ -35,6 +38,7 @@ h1 {
 
 .top {
     border-bottom: 1px black solid;
+    
 }
 
 .bottom {
