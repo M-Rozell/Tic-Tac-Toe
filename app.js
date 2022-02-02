@@ -22,7 +22,7 @@ function cellClicked(e) {
     }
     if (turnCounter >= 10) {
         location.reload();
-    } 
+    }
     checkWin();
 }
 
@@ -39,12 +39,6 @@ function checkWin() {
         [cells[0], cells[4], cells[8]],
         [cells[2], cells[4], cells[6]],
     ];
-    //if (msg.textContent === "O is the Winner") {
-    //location.reload();
-    //}
-    //if (msg.textContent === "X is the Winner") {
-    //location.reload();
-    //}
 
     for (let t = 0; t < winCells.length; t++) {
 
@@ -60,10 +54,10 @@ function checkWin() {
             }
             if (xCount == 3) {
                 msg.innerHTML = "X is the Winner!";
-                setTimeout(() => location.reload(), 1000);
+                setTimeout(() => location.reload(), 1200);
             } else if (oCount == 3) {
                 msg.innerHTML = " O is the Winner!";
-                setTimeout(() => location.reload(), 1000);
+                setTimeout(() => location.reload(), 1200);
             }
         }
     }
@@ -72,8 +66,16 @@ function checkWin() {
 
 //function reset();{};
 
+  //if (msg.textContent === "O is the Winner") {
+    //location.reload();
+    //}
+    //if (msg.textContent === "X is the Winner") {
+    //location.reload();
+    //}
 
-
-
+//if(turnCounter % 2 == 0){
+    // e.target.textContent = "O";
+    //}else if (turnCounter % 2 !== 0){
+    //e.target.textContent = "X";}
 
 
