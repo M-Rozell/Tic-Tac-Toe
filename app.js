@@ -3,29 +3,31 @@ let msg = document.querySelector('.msg');
 let turnCounter = 0;
 
 for (let i = 0; i < cells.length; i++) {
-    cells[i].addEventListener('click', cellClicked,)
+    cells[i].addEventListener('click', cellClicked)
 }
 
 function cellClicked(e) {
 
     turnCounter++;
 
+    if (msg.textContent === "X is the Winner!") {
+        location.reload();
+    }
+    if (msg.textContent === "O is the Winner!") {
+        location.reload();
+    }
+    if (turnCounter >= 10) {
+        location.reload();
+    }
     if (turnCounter % 2 == true) {
         e.target.textContent = "X";
     }
     else if (turnCounter % 2 == false) {
         e.target.textContent = "O";
-    }
-
-    if (turnCounter >= 9) {
-        msg.innerHTML = "Draw!"
-    }
-    if (turnCounter >= 10) {
-        location.reload();
-    }
+    } 
+   
     checkWin();
 }
-
 
 function checkWin() {
 
@@ -49,33 +51,45 @@ function checkWin() {
 
             if (winCells[t][j].textContent === 'X') {
                 xCount++
+                // winCells[t][j].removeEventListener('click', cellClicked); 
             } else if (winCells[t][j].textContent === 'O') {
                 oCount++
+                // winCells[t][j].removeEventListener('click', cellClicked); 
             }
             if (xCount == 3) {
                 msg.innerHTML = "X is the Winner!";
-                setTimeout(() => location.reload(), 1200);
+                //setTimeout(() => location.reload(), 1200);
             } else if (oCount == 3) {
-                msg.innerHTML = " O is the Winner!";
-                setTimeout(() => location.reload(), 1200);
+                msg.innerHTML = "O is the Winner!";
+                // setTimeout(() => location.reload(), 1200);
+            } 
+            if (turnCounter >= 9) {
+                msg.innerHTML = "Draw!"
             }
-        }
+         }
     }
 }
+  
+       
 
+//if(cells[0].textContent!==""){
+    //Draw!
+//}
 
-//function reset();{};
-
-  //if (msg.textContent === "O is the Winner") {
-    //location.reload();
-    //}
-    //if (msg.textContent === "X is the Winner") {
-    //location.reload();
-    //}
+      //if(e.target.textContent == ''){}
 
 //if(turnCounter % 2 == 0){
     // e.target.textContent = "O";
     //}else if (turnCounter % 2 !== 0){
     //e.target.textContent = "X";}
 
-
+//  if (msg.textContent === "Draw!") {
+//         location.reload();
+//     }
+// function checkBox() {
+//     for (let k = 0; k < cells.length; k++) {
+//         if (cells[k].textContent == 'X' || 'O') {
+//             cells[k].removeEventListener('click', cellClicked);
+//         }
+//     }
+// }
