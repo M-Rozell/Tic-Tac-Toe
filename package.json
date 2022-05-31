@@ -1,0 +1,23 @@
+{
+  "name": "tic-tac-toe",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe Game Board\r In this lab, we're going to start building a web based Tic Tac Toe game!",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-Rozell/Tic-Tac-Toe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M-Rozell/Tic-Tac-Toe/issues"
+  },
+  "homepage": "https://github.com/M-Rozell/Tic-Tac-Toe#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

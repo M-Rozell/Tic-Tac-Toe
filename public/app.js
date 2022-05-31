@@ -70,7 +70,7 @@ function checkWin() {
     }
 }
   
-       
+console.log('running!')     
 
 //if(cells[0].textContent!==""){
     //Draw!
